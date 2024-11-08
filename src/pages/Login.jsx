@@ -11,8 +11,8 @@ export default function Login() {
   const { setAccessToken, setRefreshToken, setIsAuthenticated, setUserId } = useContext(AuthContext);
   const navigate = useNavigate();
   const toast = useToast();
-  const [email, setEmail] = useState('sohitmishra78360@gmail.com');
-  const [password, setPassword] = useState('sohitmishra7836@');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
